@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlaylistMan">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="~PlaylistMan" Hidden="true" />
+      <Method Name="derivedCreateNode" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Method Name="PlaylistMan" Hidden="true" />
+      <Method Name="privGetInstance" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABIAAAAAAAAAAAAAAAABhAAQAABIAEAAAAAAAgAIAAA=</HashCode>
+      <FileName>PlayList\PlaylistMan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManBase" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAIAFAAACgCgAAgAAIgQAUAAIAgAAABAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManBase.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poActive" />
+      <Field Name="poReserve" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ListBase" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAs=</HashCode>
+      <FileName>Manager\ListBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLinkMan" Collapsed="true">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAAAAAAAAAAAABgAAAAAABAACAAAAAAAAAAs=</HashCode>
+      <FileName>Manager\DLinkMan.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poHead" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DLink" Collapsed="true">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAIAAQAAAAABAAIBBBAA=</HashCode>
+      <FileName>Manager\DLink.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Playlist">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Method Name="GetId" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privClear" Hidden="true" />
+      <Method Name="privLoadBuffer" Hidden="true" />
+      <Method Name="privSetName" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Playlist::Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PlayList\Playlist.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAwAAACAAAApAAAAAAAgiAAYAABQACAgABmAAIAAgA=</HashCode>
+      <FileName>PlayList\Playlist.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pVoice" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Voice" HideInheritanceLine="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="DLink" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEBkAgAAEAgAAAABAgQAAAIABiAABAAAg=</HashCode>
+      <FileName>Voice\Voice.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="porCallback" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlaylistCmd">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="PlaylistCmd::Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PlayList\PlayListCmd.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAQAAAAAAAAAAAAABAAAAAEgAAAAAAA=</HashCode>
+      <FileName>PlayList\PlayListCmd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlaylistJukeBox">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="~PlaylistJukeBox" Hidden="true" />
+      <Method Name="derivedCreateNode" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Method Name="PlaylistJukeBox" Hidden="true" />
+      <Method Name="privGetInstance" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABIAgAAAAAAAEAAAAAADhAAAAABIAEAAAAAAAAAIAAA=</HashCode>
+      <FileName>PlayList\PlaylistJukeBox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlaylistData" Collapsed="true">
+    <Position X="3.25" Y="6.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAIAAAAAAAAAAEAAAAAgAAAQAAA=</HashCode>
+      <FileName>PlayList\PlaylistData.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlaylistData_One" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAQAAAAEAAAAAgBAAAEAA=</HashCode>
+      <FileName>PlayList\PlaylistData_One.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlaylistData_Stitched" Collapsed="true">
+    <Position X="4" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAQAAAAAAAABAAACAAAAAEAACAAgACAAAAA=</HashCode>
+      <FileName>PlayList\PlaylistData_Stitched.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VoiceCallback">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="VoiceCallback::Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Voice\VoiceCallback.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="VoiceCallback::Status" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Voice\VoiceCallback.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABQAAAAEIAAEQAAAAAAAAAAAAAABAAAAAAAgACAAAAA=</HashCode>
+      <FileName>Voice\VoiceCallback.h</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="VoiceCallback_One">
+    <Position X="11.75" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgABAIAAAQAAAIAAAAAAEAAAAAAEAAEAghAEAAAA=</HashCode>
+      <FileName>Voice\VoiceCallback_One.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VoiceCallback_Stitched">
+    <Position X="14.25" Y="6.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgABAKAAAQAAAJAIAAAAEAAAAAAEAAAggBAEAAAA=</HashCode>
+      <FileName>Voice\VoiceCallback_Stitched.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

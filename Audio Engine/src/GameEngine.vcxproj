@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{ED602E5D-031C-4AF8-B6A6-4B34E0073B27}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>CppCoreCheckConstRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+    <GenerateManifest>false</GenerateManifest>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;BOOSTER;_WINDOWS;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";SOLUTION_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";USE_THREAD_FRAMEWORK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB7\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\FileSlow\include;$(SolutionDir)dist\Time\include;$(SolutionDir)dist\AzulCore\include;$(SolutionDir)GameApp_ReadOnly;$(SolutionDir)src;$(SolutionDir)src\_Diagrams;$(SolutionDir)src\ASnd;$(SolutionDir)src\CircularQueue;$(SolutionDir)src\Command;$(SolutionDir)src\Handle;$(SolutionDir)src\Manager;$(SolutionDir)src\PlayList;$(SolutionDir)src\Snd;$(SolutionDir)src\Thread - Audio;$(SolutionDir)src\Thread - Aux;$(SolutionDir)src\Thread - File;$(SolutionDir)src\Thread - Game;$(SolutionDir)src\Thread - Test;$(SolutionDir)src\Utilities;$(SolutionDir)src\Voice;$(SolutionDir)src\Wave;$(SolutionDir)src\XAudio2;$(SolutionDir)src\Timer;$(SolutionDir)src\Demo</AdditionalIncludeDirectories>
+      <WarningVersion>
+      </WarningVersion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderOutputFile />
+      <ForcedIncludeFiles>Framework.h;ThreadFramework.h</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>false</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName)_x.pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h" />
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h" />
+    <ClInclude Include="..\dist\FileSlow\include\FileSlow.h" />
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\SB7\include\object.h" />
+    <ClInclude Include="..\dist\SB7\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7color.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7ext.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7ktx.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7textoverlay.h" />
+    <ClInclude Include="..\dist\SB7\include\shader.h" />
+    <ClInclude Include="..\dist\SB7\include\vmath.h" />
+    <ClInclude Include="..\dist\Time\include\AzulTime.h" />
+    <ClInclude Include="..\dist\Time\include\AzulTimer.h" />
+    <ClInclude Include="..\Framework\Framework.h" />
+    <ClInclude Include="..\Framework\ProjectSettings.h" />
+    <ClInclude Include="..\Framework\ThreadFramework.h" />
+    <ClInclude Include="..\GameApp_ReadOnly\GameApp.h" />
+    <ClInclude Include="..\GameApp_ReadOnly\GameMan.h" />
+    <ClInclude Include="..\GameApp_ReadOnly\InputMan.h" />
+    <ClInclude Include="..\GameApp_ReadOnly\Keyboard.h" />
+    <ClInclude Include="..\GameApp_ReadOnly\Mouse.h" />
+    <ClInclude Include="..\Test\_UnitTestConfiguration.h" />
+    <ClInclude Include="ASnd\ASnd.h" />
+    <ClInclude Include="ASnd\ASndMan.h" />
+    <ClInclude Include="ASnd\Audio_CreateASnd_Cmd.h" />
+    <ClInclude Include="ASnd\Audio_PanASnd_Cmd.h" />
+    <ClInclude Include="ASnd\Audio_PlayASnd_Cmd.h" />
+    <ClInclude Include="ASnd\Audio_SndEnd_Cmd.h" />
+    <ClInclude Include="ASnd\Audio_StopASnd_Cmd.h" />
+    <ClInclude Include="ASnd\Audio_VolASnd_Cmd.h" />
+    <ClInclude Include="CircularQueue\CircularData.h" />
+    <ClInclude Include="CircularQueue\CircularIndex.h" />
+    <ClInclude Include="CircularQueue\QueueMan.h" />
+    <ClInclude Include="Command\Command.h" />
+    <ClInclude Include="Demo\Demo4_Kill_Cmd.h" />
+    <ClInclude Include="Handle\Handle.h" />
+    <ClInclude Include="Handle\HandleMan.h" />
+    <ClInclude Include="Manager\DLink.h" />
+    <ClInclude Include="Manager\DLinkIterator.h" />
+    <ClInclude Include="Manager\DLinkMan.h" />
+    <ClInclude Include="Manager\Iterator.h" />
+    <ClInclude Include="Manager\ListBase.h" />
+    <ClInclude Include="Manager\ManBase.h" />
+    <ClInclude Include="PlayList\Audio_LoadPlaylist_Cmd.h" />
+    <ClInclude Include="PlayList\I_Playlist_CB.h" />
+    <ClInclude Include="PlayList\Playlist.h" />
+    <ClInclude Include="PlayList\PlayListCmd.h" />
+    <ClInclude Include="PlayList\PlaylistData.h" />
+    <ClInclude Include="PlayList\PlaylistData_One.h" />
+    <ClInclude Include="PlayList\PlaylistData_Stitched.h" />
+    <ClInclude Include="PlayList\PlaylistMan.h" />
+    <ClInclude Include="PlayList\PlaylistJukeBox.h" />
+    <ClInclude Include="PlayList\Playlist_Pan_Cmd.h" />
+    <ClInclude Include="PlayList\Playlist_Start_Cmd.h" />
+    <ClInclude Include="PlayList\Playlist_Stop_Cmd.h" />
+    <ClInclude Include="PlayList\Playlist_Vol_Cmd.h" />
+    <ClInclude Include="Snd\Snd.h" />
+    <ClInclude Include="Snd\SndMan.h" />
+    <ClInclude Include="Thread - Audio\AudioEngine.h" />
+    <ClInclude Include="Thread - Audio\AudioThread.h" />
+    <ClInclude Include="Thread - Aux\Aux_I_File_CB_Cmd.h" />
+    <ClInclude Include="Thread - Aux\AuxThread.h" />
+    <ClInclude Include="Thread - Aux\Aux_I_RemoveAllWaves_CB_Cmd.h" />
+    <ClInclude Include="Thread - Aux\Aux_I_RemoveWave_CB_Cmd.h" />
+    <ClInclude Include="Thread - File\Audio_AsyncFileLoadCompleted_Cmd.h" />
+    <ClInclude Include="Thread - File\Audio_FileLoadCompleted_Cmd.h" />
+    <ClInclude Include="Thread - File\File_AsyncLoadFile_Cmd.h" />
+    <ClInclude Include="Thread - File\File_LoadFile_Cmd.h" />
+    <ClInclude Include="Thread - File\FileThread.h" />
+    <ClInclude Include="Thread - File\I_File_CB.h" />
+    <ClInclude Include="Thread - Game\Audio.h" />
+    <ClInclude Include="Thread - Game\Audio_LoadAsyncWave_Cmd.h" />
+    <ClInclude Include="Thread - Game\Audio_RemoveAllWaves_Cmd.h" />
+    <ClInclude Include="Thread - Game\Audio_RemoveWave_Cmd.h" />
+    <ClInclude Include="Thread - Game\Game.h" />
+    <ClInclude Include="Thread - Game\Game_TransferAsyncLoadUserCallback_Cmd.h" />
+    <ClInclude Include="Thread - Game\Game_TransferSndUserCallback_Cmd.h" />
+    <ClInclude Include="Thread - Game\InputTest.h" />
+    <ClInclude Include="Thread - Game\Audio_LoadWave_Cmd.h" />
+    <ClInclude Include="Thread - Game\UserAsyncLoadCallback.h" />
+    <ClInclude Include="Thread - Game\UserSndCallback.h" />
+    <ClInclude Include="Thread - Test\BasicsDemo.h" />
+    <ClInclude Include="Thread - Test\LeftRightPan.h" />
+    <ClInclude Include="Thread - Test\PanLeft.h" />
+    <ClInclude Include="Thread - Test\PanQuickChange.h" />
+    <ClInclude Include="Thread - Test\PanRight.h" />
+    <ClInclude Include="Thread - Test\PartF.h" />
+    <ClInclude Include="Thread - Test\PriorityTableDemo.h" />
+    <ClInclude Include="Thread - Test\TestThread.h" />
+    <ClInclude Include="Thread - Test\UserCallbacksDemo.h" />
+    <ClInclude Include="Thread - Test\VoiceStitchingDemo.h" />
+    <ClInclude Include="Thread - Test\VolumeChange.h" />
+    <ClInclude Include="Timer\TimeEvent.h" />
+    <ClInclude Include="Timer\TimeEventMan.h" />
+    <ClInclude Include="Timer\TimerMan.h" />
+    <ClInclude Include="Utilities\StringThis.h" />
+    <ClInclude Include="Voice\Voice.h" />
+    <ClInclude Include="Voice\VoiceCallback.h" />
+    <ClInclude Include="Voice\VoiceCallback_One.h" />
+    <ClInclude Include="Voice\VoiceCallback_Stitched.h" />
+    <ClInclude Include="Voice\VoiceMan.h" />
+    <ClInclude Include="Wave\Wave.h" />
+    <ClInclude Include="Wave\WaveMan.h" />
+    <ClInclude Include="Wave\WaveTable.h" />
+    <ClInclude Include="XAudio2\XAudio2Chunk.h" />
+    <ClInclude Include="XAudio2\XAudio2Endianess.h" />
+    <ClInclude Include="XAudio2\XAudio2Wrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+    <None Include="..\Test\__DO NOT MODIFY__" />
+    <None Include="_Diagrams\_ASndDiagram.cd" />
+    <None Include="_Diagrams\_ManagerDiagram.cd" />
+    <None Include="_Diagrams\_PlayListDiagram.cd" />
+    <None Include="_Diagrams\_VoiceManDiagram.cd" />
+    <None Include="_Diagrams\_VoiceWaveDiagram.cd" />
+    <None Include="_Diagrams\_WaveManDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GameApp_ReadOnly\GameApp.cpp" />
+    <ClCompile Include="..\GameApp_ReadOnly\GameMan.cpp" />
+    <ClCompile Include="..\GameApp_ReadOnly\InputMan.cpp" />
+    <ClCompile Include="..\GameApp_ReadOnly\Keyboard.cpp" />
+    <ClCompile Include="..\GameApp_ReadOnly\Mouse.cpp" />
+    <ClCompile Include="..\Test\Version_Check.cpp" />
+    <ClCompile Include="ASnd\ASnd.cpp" />
+    <ClCompile Include="ASnd\ASndMan.cpp" />
+    <ClCompile Include="ASnd\Audio_CreateASnd_Cmd.cpp" />
+    <ClCompile Include="ASnd\Audio_PanASnd_Cmd.cpp" />
+    <ClCompile Include="ASnd\Audio_PlayASnd_Cmd.cpp" />
+    <ClCompile Include="ASnd\Audio_SndEnd_Cmd.cpp" />
+    <ClCompile Include="ASnd\Audio_StopASnd_Cmd.cpp" />
+    <ClCompile Include="ASnd\Audio_VolASnd_Cmd.cpp" />
+    <ClCompile Include="CircularQueue\CircularData.cpp" />
+    <ClCompile Include="CircularQueue\CircularIndex.cpp" />
+    <ClCompile Include="CircularQueue\QueueMan.cpp" />
+    <ClCompile Include="Handle\Handle.cpp" />
+    <ClCompile Include="Handle\HandleMan.cpp" />
+    <ClCompile Include="Handle\Lock.cpp" />
+    <ClCompile Include="Handle\LockTwoInput.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Manager\DLink.cpp" />
+    <ClCompile Include="Manager\DLinkIterator.cpp" />
+    <ClCompile Include="Manager\DLinkMan.cpp" />
+    <ClCompile Include="Manager\ManBase.cpp" />
+    <ClCompile Include="PlayList\Audio_LoadPlaylist_Cmd.cpp" />
+    <ClCompile Include="PlayList\I_Playlist_CB.cpp" />
+    <ClCompile Include="PlayList\Playlist.cpp" />
+    <ClCompile Include="PlayList\PlayListCmd.cpp" />
+    <ClCompile Include="PlayList\PlaylistMan.cpp" />
+    <ClCompile Include="PlayList\PlaylistJukeBox.cpp" />
+    <ClCompile Include="PlayList\Playlist_Pan_Cmd.cpp" />
+    <ClCompile Include="PlayList\Playlist_Start_Cmd.cpp" />
+    <ClCompile Include="PlayList\Playlist_Stop_Cmd.cpp" />
+    <ClCompile Include="PlayList\Playlist_Vol_Cmd.cpp" />
+    <ClCompile Include="Snd\Snd.cpp" />
+    <ClCompile Include="Snd\SndMan.cpp" />
+    <ClCompile Include="Thread - Audio\AudioEngine.cpp" />
+    <ClCompile Include="Thread - Audio\AudioThread.cpp" />
+    <ClCompile Include="Thread - Aux\Aux_I_File_CB_Cmd.cpp" />
+    <ClCompile Include="Thread - Aux\AuxThread.cpp" />
+    <ClCompile Include="Thread - Aux\Aux_I_Playlist_CB_Cmd.cpp" />
+    <ClCompile Include="Thread - Aux\Aux_I_RemoveAllWaves_CB_Cmd.cpp" />
+    <ClCompile Include="Thread - Aux\Aux_I_RemoveWave_CB_Cmd.cpp" />
+    <ClCompile Include="Thread - File\Audio_AsyncFileLoadCompleted_Cmd.cpp" />
+    <ClCompile Include="Thread - File\Audio_FileLoadCompleted_Cmd.cpp" />
+    <ClCompile Include="Thread - File\File_AsyncLoadFile_Cmd.cpp" />
+    <ClCompile Include="Thread - File\File_LoadFile_Cmd.cpp" />
+    <ClCompile Include="Thread - File\FileThread.cpp" />
+    <ClCompile Include="Thread - File\I_File_CB.cpp" />
+    <ClCompile Include="Thread - Game\Audio.cpp" />
+    <ClCompile Include="Thread - Game\Audio_LoadAsyncWave_Cmd.cpp" />
+    <ClCompile Include="Thread - Game\Audio_RemoveAllWaves_Cmd.cpp" />
+    <ClCompile Include="Thread - Game\Audio_RemoveWave_Cmd.cpp" />
+    <ClCompile Include="Thread - Game\Game.cpp" />
+    <ClCompile Include="Thread - Game\Game_TransferAsyncLoadUserCallback_Cmd.cpp" />
+    <ClCompile Include="Thread - Game\Game_TransferSndUserCallback_Cmd.cpp" />
+    <ClCompile Include="Thread - Game\InputTest.cpp" />
+    <ClCompile Include="Thread - Game\Audio_LoadWave_Cmd.cpp" />
+    <ClCompile Include="Thread - Game\UserAsyncLoadCallback.cpp" />
+    <ClCompile Include="Thread - Game\UserSndCallback.cpp" />
+    <ClCompile Include="Thread - Test\AlarmCmd.cpp" />
+    <ClCompile Include="Thread - Test\AsyncDemo.cpp" />
+    <ClCompile Include="Thread - Test\BasicsDemo.cpp" />
+    <ClCompile Include="Thread - Test\LeftRightPan.cpp" />
+    <ClCompile Include="Thread - Test\PanLeft.cpp" />
+    <ClCompile Include="Thread - Test\PanQuickChange.cpp" />
+    <ClCompile Include="Thread - Test\PanRight.cpp" />
+    <ClCompile Include="Thread - Test\PartF.cpp" />
+    <ClCompile Include="Thread - Test\PriorityTableDemo.cpp" />
+    <ClCompile Include="Thread - Test\TestThread.cpp" />
+    <ClCompile Include="Thread - Test\UserCallbacksDemo.cpp" />
+    <ClCompile Include="Thread - Test\VoiceStitchingDemo.cpp" />
+    <ClCompile Include="Thread - Test\VolumeChange.cpp" />
+    <ClCompile Include="Timer\TimeEvent.cpp" />
+    <ClCompile Include="Timer\TimeEventMan.cpp" />
+    <ClCompile Include="Timer\TimerMan.cpp" />
+    <ClCompile Include="Utilities\StringThis.cpp" />
+    <ClCompile Include="Voice\Voice.cpp" />
+    <ClCompile Include="Voice\VoiceCallback.cpp" />
+    <ClCompile Include="Voice\VoiceCallback_One.cpp" />
+    <ClCompile Include="Voice\VoiceCallback_Stitched.cpp" />
+    <ClCompile Include="Voice\VoiceMan.cpp" />
+    <ClCompile Include="Wave\Wave.cpp" />
+    <ClCompile Include="Wave\WaveMan.cpp" />
+    <ClCompile Include="Wave\WaveTable.cpp" />
+    <ClCompile Include="XAudio2\XAudio2Chunk.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib" />
+    <Library Include="..\dist\FileSlow\lib\FileSlow_X86Debug.lib" />
+    <Library Include="..\dist\GLFW\lib\GLFW_X86Debug.lib" />
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib" />
+    <Library Include="..\dist\SB7\lib\SB7_X86Debug.lib" />
+    <Library Include="..\dist\Time\lib\Time_Debug.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WaveMan">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~WaveMan" Hidden="true" />
+      <Method Name="derivedCreateNode" Hidden="true" />
+      <Method Name="privGetInstance" Hidden="true" />
+      <Method Name="WaveMan" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABIABAAAAAAAAIAAAAABhAAAAABIAEAAAAAAAAAIAAA=</HashCode>
+      <FileName>Wave\WaveMan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManBase" Collapsed="true">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAIAFAAACgCgAAgAAIgQAUAAIAgAAABAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManBase.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poActive" />
+      <Field Name="poReserve" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ListBase" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAs=</HashCode>
+      <FileName>Manager\ListBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLinkMan" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAAAAAAAAAAAABgAAAAAABAACAAAAAAAAAAs=</HashCode>
+      <FileName>Manager\DLinkMan.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poHead" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DLink" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAIAAQAAAAABAAIBBBAA=</HashCode>
+      <FileName>Manager\DLink.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wave">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <Members>
+      <Method Name="~Wave" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Field Name="NAME_SIZE" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privClear" Hidden="true" />
+      <Method Name="privLoadBuffer" Hidden="true" />
+      <Method Name="privSetName" Hidden="true" />
+      <Method Name="SetId" Hidden="true" />
+      <Field Name="strName" Hidden="true" />
+      <Method Name="Wave" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="Wave::Status" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Wave\Wave.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Wave::ID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Wave\Wave.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACSAAAACAAAAoAAAAAAAgCAwAAEBWAAAAgBiAAIAAgA=</HashCode>
+      <FileName>Wave\Wave.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poWfx" />
+      <Field Name="poRawBuff" />
+      <Field Name="pIFileCB" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Audio">
+    <Position X="0.75" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="~Audio" Hidden="true" />
+      <Method Name="Audio" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privGetInstance" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Audio::Blocking" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Audio.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Audio::Async" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Audio.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAgACAAAAAAAAAEAEBAAEAAABAQEAAAAAgAAAIAAA=</HashCode>
+      <FileName>Audio.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poWaveTable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WaveTable">
+    <Position X="3.5" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="~WaveTable" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privFind" Hidden="true" />
+      <Method Name="privFindEmpty" Hidden="true" />
+      <Method Name="WaveTable" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="WaveTable::Table" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WaveTable.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAQAAAAABAAAAAgAAABAAJAACACAAgAAAABAA=</HashCode>
+      <FileName>WaveTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="I_File_CB" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAQAAAAAIAAAAAAAAAAAAAAgEAAAAAA=</HashCode>
+      <FileName>I_File_CB.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="WAVEFORMATEXTENSIBLE" Collapsed="true">
+    <Position X="3.5" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\mmreg.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RawData" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wave\Wave.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

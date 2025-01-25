@@ -1,0 +1,31 @@
+﻿  Camera.cpp
+  d3dUtil.cpp
+  DXApp.cpp
+  FlatPlane.cpp
+  GameTimer.cpp
+  GraphicObject_Base.cpp
+  GraphicObject_Color.cpp
+  GraphicObject_ColorLight.cpp
+  GraphicObject_ColorTextureLight.cpp
+  GraphicObject_Texture.cpp
+  GraphicObject_TextureLight.cpp
+  GraphicObject_TextureMultiLight.cpp
+  MeshSeparator.cpp
+  Mirror.cpp
+  Model.cpp
+  ModelTools.cpp
+  ShaderBase.cpp
+  ShaderColor.cpp
+  ShaderColorLight.cpp
+  ShaderColorMultiLight.cpp
+  ShaderColorMultiLightTexture.cpp
+  ShaderTexture.cpp
+  ShaderTextureLight.cpp
+  SkyBox.cpp
+  TerrainModel.cpp
+  TerrainModelIsland.cpp
+  Texture.cpp
+  MainWindow.cpp
+C:\Users\RachelMicolichek\Documents\Portfolio\Game Scene\src\MeshSeparator.cpp(53,46): warning C4100: 'ntri': unreferenced formal parameter
+C:\Users\RachelMicolichek\Documents\Portfolio\Game Scene\src\MeshSeparator.cpp(53,34): warning C4100: 'nverts': unreferenced formal parameter
+  DXApplication.vcxproj -> C:\Users\RachelMicolichek\Documents\Portfolio\Game Scene\Debug\DX Application.exe

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ASndMan">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Method Name="~ASndMan" Hidden="true" />
+      <Method Name="ASndMan" Hidden="true" />
+      <Method Name="derivedCreateNode" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Method Name="privGetInstance" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QBIAAAAAAAAAAAAAAAAhhAAAAABIAEAAAAAAAAAIAAA=</HashCode>
+      <FileName>ASnd\ASndMan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ManBase" Collapsed="true">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <AssociationLine Name="poActive" Type="ListBase" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="1.438" />
+        <Point X="3.25" Y="1.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CIAAAIAFAAACgCgAAgAAIgQAUAAIAgAAABAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManBase.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poActive" />
+      <Field Name="poReserve" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ListBase" Collapsed="true">
+    <Position X="3.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAs=</HashCode>
+      <FileName>Manager\ListBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DLinkMan" Collapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAAAAAAAAAAAABgAAAAAABAACAAAAAAAAAAs=</HashCode>
+      <FileName>Manager\DLinkMan.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poHead" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DLink" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAIAAQAAAAABAAIBBBAA=</HashCode>
+      <FileName>Manager\DLink.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASnd">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="~ASnd" Hidden="true" />
+      <Method Name="ASnd" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privClear" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAgAAgAAAAhAAAAAAAgAAAAAAASAAAgAFiAAAAAAA=</HashCode>
+      <FileName>ASnd\ASnd.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pPlaylist" />
+      <Field Name="pSnd" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Playlist" Collapsed="true" HideInheritanceLine="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="DLink" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAACAAAApAAAAAAAgCQAAAAAQAAAAABmAAIAAgA=</HashCode>
+      <FileName>PlayList\Playlist.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Snd" HideInheritanceLine="true">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Snd::ID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Snd\Snd.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="DLink" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAhAAEACAAgAAAAAAAQAAAgABiACAACAA=</HashCode>
+      <FileName>Snd\Snd.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pASnd" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

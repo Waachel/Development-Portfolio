@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="  ----&gt;  *">
+    <Position X="2.867" Y="1.417" Height="0.292" Width="0.7" />
+  </Comment>
+  <Comment CommentText="  ----&gt;  *">
+    <Position X="2.892" Y="4.033" Height="0.292" Width="0.7" />
+  </Comment>
+  <Class Name="Voice">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="~Voice" Hidden="true" />
+      <Method Name="Clear" Hidden="true" />
+      <Method Name="Compare" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Method Name="operator=" Hidden="true" />
+      <Method Name="privInitSrcBuff" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="Voice" Hidden="true" />
+      <Method Name="Wash" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEBEAgAAEAgAAAABAAQAAAIABiAABAAAg=</HashCode>
+      <FileName>Voice\Voice.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pWave" />
+      <Field Name="poBuff" />
+      <Field Name="porCallback" />
+      <Field Name="poSourceVoice" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Wave">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <Members>
+      <Field Name="NAME_SIZE" Hidden="true" />
+      <Field Name="rawBuffSize" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Wave::ID" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Wave\Wave.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAAAAACAAAApAAAAAAAgCAwAAEBWAAAAABiAAIAAgA=</HashCode>
+      <FileName>Wave\Wave.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="poWfx" />
+      <Field Name="poRawBuff" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WaveMan">
+    <Position X="1.25" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="~WaveMan" Hidden="true" />
+      <Method Name="derivedCreateNode" Hidden="true" />
+      <Method Name="privGetInstance" Hidden="true" />
+      <Method Name="WaveMan" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABIABAAAAAAAAIAAAAABhAAAAABIAEAAAAAAAAAIAAA=</HashCode>
+      <FileName>Wave\WaveMan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VoiceMan">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="~VoiceMan" Hidden="true" />
+      <Method Name="derivedCreateNode" Hidden="true" />
+      <Method Name="Dump" Hidden="true" />
+      <Method Name="privGetInstance" Hidden="true" />
+      <Method Name="VoiceMan" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABIAAAAQAAAAAEAAAAABhAAAAABIAEAAAAAAAAAIAAA=</HashCode>
+      <FileName>Voice\VoiceMan.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="XAUDIO2_BUFFER_ALIAS" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>GAABBAQAAAAAAAIAABAAAAAAAAAAACCAAAAAAAAAAAA=</HashCode>
+      <FileName>Voice\Voice.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="WAVEFORMATEXTENSIBLE" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\shared\mmreg.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RawData" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wave\Wave.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Interface Name="IXAudio2VoiceCallback" Collapsed="true">
+    <Position X="6.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgABAAAAAQAAAIAAAAAAAAAAAAAEAAAAABAEAAAA=</HashCode>
+      <FileName>C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\xaudio2.h</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IXAudio2SourceVoice" Collapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACACAAAAAAAAIACAkAAAAAAgQEIAAAAAAAAAA=</HashCode>
+      <FileName>C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\um\xaudio2.h</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
