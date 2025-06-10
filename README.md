@@ -1,4 +1,4 @@
-# Rachel Micolichek's Development Portfolio 🎮
+# Rachel Micolichek's Development Portfolio 
 
 ## Where Technical Leadership Meets Creative Engineering 
 
