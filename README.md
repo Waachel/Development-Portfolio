@@ -1,6 +1,6 @@
 # Rachel Micolichek's Development Portfolio 
 
-## Where Technical Leadership Meets Creative Engineering 
+## Where Systems Engineering Meets Interactive Development
 
 Hey there! 👋 I'm Rachel, a software engineer with a unique perspective. After mastering technical support and customer experience leadership, I've evolved into a developer who bridges the gap between complex technical challenges and user-focused solutions.
 
